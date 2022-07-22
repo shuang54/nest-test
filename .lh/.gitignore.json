@@ -1,0 +1,22 @@
+{
+    "sourceFile": ".gitignore",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1658466687164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1658466714493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,18 @@\n-node_modules\r\n+.DS_Store\r\n+node_modules/\r\n+/dist/\r\n+npm-debug.log*\r\n+yarn-debug.log*\r\n+yarn-error.log*\r\n+/test/unit/coverage/\r\n+/test/e2e/reports/\r\n+selenium-debug.log\r\n+\r\n+# Editor directories and files\r\n+.idea\r\n+.vscode\r\n+*.suo\r\n+*.ntvs*\r\n+*.njsproj\r\n+*.sln\r\n+dist.zip\r\n"
+                }
+            ],
+            "date": 1658466687164,
+            "name": "Commit-0",
+            "content": "node_modules\r\n"
+        }
+    ]
+}
