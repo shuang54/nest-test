@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/CatsModule/cat.moudle.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1660880382671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1660880392253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Module } from '@nestjs/common';\n-import { CatsController } from '../controller/cats.controller';\n+import { CatsController } from './cats.controller';\n import { CatsService } from '../service/cat.service';\n \n @Module({\n   controllers: [CatsController],\n"
+                },
+                {
+                    "date": 1660880429963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Module } from '@nestjs/common';\n import { CatsController } from './cats.controller';\n-import { CatsService } from '../service/cat.service';\n+import { CatsService } from './cat.service';\n \n @Module({\n   controllers: [CatsController],\n   providers: [CatsService],\n"
+                }
+            ],
+            "date": 1660880382671,
+            "name": "Commit-0",
+            "content": "import { Module } from '@nestjs/common';\nimport { CatsController } from '../controller/cats.controller';\nimport { CatsService } from '../service/cat.service';\n\n@Module({\n  controllers: [CatsController],\n  providers: [CatsService],\n})\nexport class CatsModule {}\n"
+        }
+    ]
+}

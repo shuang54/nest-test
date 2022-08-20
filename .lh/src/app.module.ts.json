@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/app.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1660877737051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1660877743772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n-import {}\n+import { CatsController } from './controller/catsController';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n   controllers: [AppController],\n"
+                },
+                {
+                    "date": 1660877750555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,7 @@\n @Module({\n   imports: [],\n   controllers: [AppController],\n   providers: [AppService],\n+  \n })\n export class AppModule {}\n"
+                },
+                {
+                    "date": 1660877775403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n import { CatsController } from './controller/catsController';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n-  controllers: [AppController],\n+  controllers: [AppController,CatsController],\n   providers: [AppService],\n-  \n })\n export class AppModule {}\n"
+                },
+                {
+                    "date": 1660879203886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n-import { CatsController } from './controller/catsController';\n+import { CatsController } from './controller/cats.controller';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n-  controllers: [AppController,CatsController],\n+  controllers: [AppController, CatsController],\n   providers: [AppService],\n })\n export class AppModule {}\n"
+                },
+                {
+                    "date": 1660879574203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n import { CatsController } from './controller/cats.controller';\n+import {}\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n   controllers: [AppController, CatsController],\n"
+                },
+                {
+                    "date": 1660879581258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n import { CatsController } from './controller/cats.controller';\n-import {}\n+import { CatsService } from './service/cat.service';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n   controllers: [AppController, CatsController],\n"
+                },
+                {
+                    "date": 1660879594322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n   controllers: [AppController, CatsController],\n-  providers: [AppService],\n+  providers: [AppService, CatsService],\n })\n export class AppModule {}\n"
+                },
+                {
+                    "date": 1660880392254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n-import { CatsController } from './controller/cats.controller';\n+import { CatsController } from './CatsModule/cats.controller';\n import { CatsService } from './service/cat.service';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n"
+                },
+                {
+                    "date": 1660880429964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n import { CatsController } from './CatsModule/cats.controller';\n-import { CatsService } from './service/cat.service';\n+import { CatsService } from './CatsModule/cat.service';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n   controllers: [AppController, CatsController],\n"
+                },
+                {
+                    "date": 1660880474871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,11 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n-import { CatsController } from './CatsModule/cats.controller';\n-import { CatsService } from './CatsModule/cat.service';\n+import {}\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n-  controllers: [AppController, CatsController],\n-  providers: [AppService, CatsService],\n+  controllers: [AppController],\n+  providers: [AppService],\n })\n export class AppModule {}\n"
+                },
+                {
+                    "date": 1660880481895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n-import {}\n+import { CatsModule } from './CatsModule/cat.moudle';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [],\n   controllers: [AppController],\n"
+                },
+                {
+                    "date": 1660880488885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { AppService } from './app.service';\n import { CatsModule } from './CatsModule/cat.moudle';\n // T应用程序的根模块（root module）。\n @Module({\n-  imports: [],\n+  imports: [CatsModule],\n   controllers: [AppController],\n   providers: [AppService],\n })\n export class AppModule {}\n"
+                },
+                {
+                    "date": 1660880530896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n-import { CatsModule } from './CatsModule/cat.moudle';\n+import { CatsModule } from './cats/CatsModule/cat.moudle';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [CatsModule],\n   controllers: [AppController],\n"
+                },
+                {
+                    "date": 1660880572952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { Module } from '@nestjs/common';\n import { AppController } from './app.controller';\n import { AppService } from './app.service';\n-import { CatsModule } from './cats/CatsModule/cat.moudle';\n+import { CatsModule } from './cats/cat.moudle';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [CatsModule],\n   controllers: [AppController],\n"
+                },
+                {
+                    "date": 1660880605730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,9 @@\n import { Module } from '@nestjs/common';\n-import { AppController } from './app.controller';\n-import { AppService } from './app.service';\n import { CatsModule } from './cats/cat.moudle';\n // T应用程序的根模块（root module）。\n @Module({\n   imports: [CatsModule],\n-  controllers: [AppController],\n-  providers: [AppService],\n+  controllers: [],\n+  providers: [],\n })\n export class AppModule {}\n"
+                }
+            ],
+            "date": 1660877737051,
+            "name": "Commit-0",
+            "content": "import { Module } from '@nestjs/common';\nimport { AppController } from './app.controller';\nimport { AppService } from './app.service';\nimport {}\n// T应用程序的根模块（root module）。\n@Module({\n  imports: [],\n  controllers: [AppController],\n  providers: [AppService],\n})\nexport class AppModule {}\n"
+        }
+    ]
+}

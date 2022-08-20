@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/interfaces/cat.interface.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1660879318994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1660879381218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export interface Cat {\r\n-  name: string;\r\n-  age: number;\r\n-  breed: string;\r\n-}\n\\ No newline at end of file\n+export interface Cat {\n+  name: string;\n+  age: number;\n+  breed: string;\n+}\n"
+                }
+            ],
+            "date": 1660879318994,
+            "name": "Commit-0",
+            "content": "export interface Cat {\r\n  name: string;\r\n  age: number;\r\n  breed: string;\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/CatsModule/cats.controller.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1660880429956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1660880429956,
+            "name": "Commit-0",
+            "content": "import { Controller, Get, Post, Body } from '@nestjs/common';\nimport { CreateCatDto } from '../dto/cat.dto';\nimport { CatsService } from './cat.service';\nimport { Cat } from '../interfaces/cat.interface';\n\n@Controller('cats')\nexport class CatsController {\n  constructor(private catsService: CatsService) {}\n\n  @Post()\n  async create(@Body() createCatDto: CreateCatDto) {\n    this.catsService.create(createCatDto);\n  }\n\n  @Get()\n  async findAll(): Promise<Cat[]> {\n    return this.catsService.findAll();\n  }\n}\n"
+        }
+    ]
+}

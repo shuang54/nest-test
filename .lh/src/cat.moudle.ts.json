@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/cat.moudle.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1660880338991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1660880338991,
+            "name": "Commit-0",
+            "content": "import { Module } from '@nestjs/common';\nimport { CatsController } from './controller/cats.controller';\nimport { CatsService } from './service/cat.service';\n\n@Module({\n  controllers: [CatsController],\n  providers: [CatsService],\n})\nexport class CatsModule {}\n"
+        }
+    ]
+}
